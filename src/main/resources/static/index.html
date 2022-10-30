@@ -8,6 +8,13 @@
 <body>
 <header th:insert="../fragments/header :: header"></header>
     <a href="/user">Home</a>
+
+    <button onclick="clickTest()">Click me</button>
 <footer th:insert="../fragments/footer :: footer"></footer>
+<script>
+    const clickTest = (e) => {
+        console.log("Clicked");
+    }
+</script>
 </body>
 </html>
